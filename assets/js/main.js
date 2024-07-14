@@ -33,7 +33,7 @@
             
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top - 45
-            }, 100, 'easeInOutExpo');
+            }, 200, 'easeInOutExpo');
             
             if ($(this).parents('.navbar-nav').length) {
                 $('.navbar-nav .active').removeClass('active');
@@ -52,7 +52,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 100, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 200, 'easeInOutExpo');
         return false;
     });
     
