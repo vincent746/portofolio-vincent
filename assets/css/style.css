@@ -15,13 +15,13 @@
 }
 
 .my-6 {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .py-6 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 
@@ -81,6 +81,9 @@
 .navbar.fixed-top {
     display: none;
     transition: .5s;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .navbar .navbar-nav .nav-link {
@@ -105,7 +108,6 @@
 
 /*** Header ***/
 #home {
-    margin-bottom: 6rem;
     background: url(../img/vincent.png) left top no-repeat;
     background-position-x: 33%;
     background-position-y: -2%;
