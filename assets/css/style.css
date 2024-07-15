@@ -463,4 +463,8 @@
         font-size: 15px;
     }
 
+    #home {
+        background: none;
+    }
+
 }
