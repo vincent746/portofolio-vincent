@@ -110,7 +110,15 @@
 #home {
     background: url(../img/vincent.png) left top no-repeat;
     background-position-x: 33%;
-    background-position-y: -2%;
+    background-position-y: 3%;
+}
+
+#home .nama {
+    margin-top: 12%;
+}
+
+#home .img-user .img-fluid {
+    margin-top: 40px;
 }
 
 .display-3 {
