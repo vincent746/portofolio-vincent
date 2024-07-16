@@ -259,8 +259,26 @@
     width: 30px;
 }
 
+#skill .tab-content #support p,
+#skill .tab-content #web-development p
+{
+    font-size: 13px;
+    border: 1px solid #6244C5;
+    padding: 9px;
+    border-radius: 12px; color: black;
+}
+
 #skill .experience .nav-pills .nav-link {
     font-size: 25px;
+}
+
+#skill .experience .tab-content ul li {
+    display: block;
+    padding: 5px;
+    border: 1px solid #6244C5;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-right: 5px;
 }
 
 #skill .myskills .nav-pills .nav-link {
@@ -465,6 +483,10 @@
 
     #home {
         background: none;
+    }
+
+    #skill .experience .tab-content ul li {
+        font-size: 10px;
     }
 
 }
