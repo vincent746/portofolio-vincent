@@ -130,6 +130,10 @@
     color: var(--dark);
 }
 
+#home h2 {
+    font-size: (1.325rem + .9vw);
+}
+
 .btn-play {
     position: relative;
     display: block;
@@ -487,6 +491,14 @@
 
     #skill .experience .tab-content ul li {
         font-size: 10px;
+    }
+
+    .display-3 {
+        font-size: 2rem;
+    }
+
+    #home h2 {
+        font-size: 20px;
     }
 
 }
