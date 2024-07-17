@@ -383,6 +383,11 @@ footer .sosmed a:hover{
     background-color: #6244C5;
 }
 
+footer .sosmed .btn-square {
+    width: 32px;
+    height: 32px;
+}
+
 
 @media (max-width: 575.98px) {
 
