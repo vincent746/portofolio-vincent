@@ -362,6 +362,27 @@ body {
     padding-bottom: 30px !important;
 }
 
+footer h3 {
+    color: white; 
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #6244C5;
+}
+
+footer .sosmed .btn{
+    background-color: white;
+}
+
+footer .sosmed a:hover{
+    background-color: #6244C5;
+}
+
 
 @media (max-width: 575.98px) {
 
