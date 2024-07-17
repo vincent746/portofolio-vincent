@@ -323,8 +323,12 @@ body {
     cursor: context-menu;
 }
 
+#portofolio .detail-portofolio img {
+    margin-left: -10%;
+}
+
 #portofolio .header-portofolio p {
-    margin: 5px;
+    margin-top: 5px;
 }
 
 #portfolio-flters li:hover,
@@ -383,6 +387,10 @@ body {
 
     #home h2 {
         font-size: 20px;
+    }
+
+    #portofolio .detail-portofolio img {
+        margin-left: 0px;
     }
 
 }
