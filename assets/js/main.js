@@ -1,3 +1,10 @@
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'PrintScreen' || (event.ctrlKey && event.key === 's')) {
+        event.preventDefault();
+        alert('Screenshot tidak diizinkan!');
+    }
+});
+
 (function ($) {
     "use strict";
 
