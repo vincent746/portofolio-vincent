@@ -296,6 +296,16 @@ body {
     font-size: 20px;
 }
 
+.experience-item button[data-bs-toggle="collapse"] i {
+    transition: transform 0.3s ease;
+}
+.experience-item button[data-bs-toggle="collapse"][aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+.experience-item button:hover {
+    background-color: rgba(13, 110, 253, 0.05) !important;
+}
+
 
 /*** Service ***/
 .service-item .bg-icon {
