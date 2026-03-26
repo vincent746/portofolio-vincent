@@ -399,6 +399,479 @@ footer .sosmed .btn-square {
 }
 
 
+/* ============================================
+   Portfolio Cards Section
+   ============================================ */
+.porto-cards-section {
+    margin-top: 3rem;
+}
+
+/* Tab Navigation */
+.porto-tab-nav {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.porto-tab-btn {
+    padding: 0.45rem 1.2rem;
+    border: 1.5px solid #dee2e6;
+    border-radius: 50px;
+    background: transparent;
+    color: #555;
+    font-size: 13.5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s;
+    white-space: nowrap;
+    line-height: 1.6;
+}
+
+.porto-tab-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.porto-tab-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+.porto-tab-icon {
+    font-size: 12px;
+}
+
+.porto-tab-pane {
+    display: none;
+}
+
+.porto-tab-pane.active {
+    display: block;
+}
+
+/* Porto Card */
+.porto-card {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e9ecef;
+    background: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.porto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 36px rgba(98, 68, 197, 0.14);
+}
+
+/* Card Image Area */
+.porto-card-img {
+    position: relative;
+    height: 175px;
+    overflow: hidden;
+}
+
+.porto-slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.porto-slide-has-image {
+    cursor: zoom-in;
+}
+
+/* Badge top-right */
+.porto-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.2);
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.porto-badge-teal   { background: rgba(0, 140, 130, 0.55); }
+.porto-badge-orange { background: rgba(200, 85, 0, 0.55); }
+.porto-badge-green  { background: rgba(0, 135, 60, 0.55); }
+.porto-badge-red    { background: rgba(185, 40, 40, 0.55); }
+.porto-badge-purple { background: rgba(110, 25, 170, 0.55); }
+
+/* Slides */
+.porto-slides-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.porto-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.55s ease;
+    pointer-events: none;
+}
+
+.porto-slide.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.porto-slide-icon {
+    font-size: 2.4rem;
+    color: rgba(255,255,255,0.25);
+    margin-bottom: 0.4rem;
+}
+
+.porto-slide-label {
+    color: rgba(255,255,255,0.5);
+    font-size: 11.5px;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* Hover Overlay */
+.porto-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(98, 68, 197, 0.78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 5;
+}
+
+.porto-hover-overlay span {
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.porto-card:hover .porto-hover-overlay {
+    opacity: 1;
+}
+
+/* Slide Dots */
+.porto-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    z-index: 6;
+}
+
+.porto-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    transition: background 0.3s, width 0.3s, border-radius 0.3s;
+}
+
+.porto-dot.active {
+    background: #fff;
+    width: 18px;
+    border-radius: 3px;
+}
+
+/* Card Body */
+.porto-card-body {
+    padding: 0.9rem 1rem 1rem;
+}
+
+.porto-view-link {
+    margin-top: 0.2rem;
+}
+
+.porto-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.porto-title {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0.3rem 0 0.4rem;
+    line-height: 1.35;
+}
+
+.porto-desc {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 0.65rem;
+    line-height: 1.55;
+}
+
+.porto-tags-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.porto-tag {
+    font-size: 10.5px;
+    padding: 2px 9px;
+    border-radius: 50px;
+    border: 1px solid #dde0e6;
+    color: #666;
+    background: #f6f7fb;
+}
+
+/* ============================================
+   Portfolio Modal
+   ============================================ */
+.porto-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.86);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.porto-modal-close {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    z-index: 10002;
+    background: rgba(255,255,255,0.12);
+    border: none;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+    transition: background 0.2s;
+}
+
+.porto-modal-close:hover {
+    background: rgba(255,255,255,0.28);
+}
+
+.porto-modal-card {
+    background: #14142a;
+    border-radius: 18px;
+    overflow: hidden;
+    max-width: 520px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+}
+
+.porto-modal-img-area {
+    position: relative;
+    height: 290px;
+    overflow: hidden;
+}
+
+.porto-modal-counter {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    z-index: 10;
+    background: rgba(0,0,0,0.38);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 12px;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+}
+
+.porto-modal-slides-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.porto-modal-slides-wrap .porto-slide {
+    border-radius: 0;
+}
+
+.porto-modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(255,255,255,0.12);
+    border: none;
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    transition: background 0.2s;
+    line-height: 1;
+}
+
+.porto-modal-nav:hover {
+    background: rgba(255,255,255,0.28);
+}
+
+.porto-modal-prev { left: 12px; }
+.porto-modal-next { right: 12px; }
+
+.porto-modal-dots {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 10;
+}
+
+.porto-modal-body {
+    padding: 1.1rem 1.5rem 1.5rem;
+}
+
+.porto-modal-badge {
+    font-size: 10px;
+    font-weight: 700;
+    color: #b09af0;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.porto-modal-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 0.3rem 0 0.55rem;
+    letter-spacing: -0.3px;
+    font-family: 'Courier New', monospace;
+}
+
+.porto-modal-desc {
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.65;
+    margin-bottom: 1rem;
+}
+
+.porto-modal-desc p {
+    margin: 0 0 0.7rem;
+}
+
+.porto-modal-desc ul {
+    margin: 0 0 0.85rem 1.1rem;
+    padding: 0;
+}
+
+.porto-modal-desc li {
+    margin-bottom: 0.4rem;
+}
+
+.porto-modal-tags-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.porto-modal-view-link {
+    margin-top: 0.9rem;
+}
+
+.porto-modal-tags-wrap .porto-tag {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.18);
+    color: rgba(255,255,255,0.75);
+}
+
+/* Full image preview from portfolio modal */
+.porto-image-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 10050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.porto-image-lightbox img {
+    max-width: 95vw;
+    max-height: 92vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
+}
+
+.porto-image-lightbox-close {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    z-index: 10051;
+    background: rgba(255,255,255,0.15);
+    border: none;
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+    transition: background 0.2s;
+}
+
+.porto-image-lightbox-close:hover {
+    background: rgba(255,255,255,0.3);
+}
+
 @media (max-width: 575.98px) {
 
     #skill .experience .nav-pills .nav-link {
