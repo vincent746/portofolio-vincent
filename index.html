@@ -60,7 +60,7 @@
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About Me</a>
                 <a href="#skill" class="nav-item nav-link">Skills & Experience</a>
-                <a href="#portofolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#portofolio" class="nav-item nav-link">Portofolio</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>       
         </div>
@@ -208,7 +208,7 @@
                                             <div>
                                                 <h5 class="mb-1">PT Millionaire Club Indonesia</h5>
                                                 <p class="text-primary mb-0 fw-bold small">Des 2019 - Feb 2023</p>
-                                                <h6 class="mb-0 mt-1">IT Support and Web Development</h6>
+                                                <h6 class="mb-0 mt-1">IT Support & Web Development</h6>
                                             </div>
                                             <i class="fas fa-chevron-down text-primary ms-3"></i>
                                         </button>
@@ -464,56 +464,398 @@
         <div class="container">
             <div class="row g-5 header-portofolio wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Portfolio</h1>
+                    <h1 class="display-5 mb-0">Portofolio</h1>
                 </div>
-                <p>The websites I create are both personal and team</p>
+                <p>Website yang saya buat meliputi website pribadi dan website tim.</p>
             </div>
-            <div class="row g-5wow detail-portofolio wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6 mb-5 order-lg-2">
-                    <img src="assets/img/web-foundation.png" alt="" class="img-fluid">
+            <!-- Portfolio Cards with Tabs -->
+            <div class="porto-cards-section mt-5 wow fadeInUp" data-wow-delay="0.3s">
+                <!-- Tab Navigation -->
+                <div class="porto-tab-nav d-flex justify-content-center gap-2 mb-4 flex-wrap">
+                    <button class="porto-tab-btn active" data-tab="porto-project">
+                        <span class="porto-tab-icon">✦</span> Project
+                    </button>
+                    <button class="porto-tab-btn" data-tab="porto-perf">
+                        <span class="porto-tab-icon">⚡</span> Performance Optimization
+                    </button>
+                    <button class="porto-tab-btn" data-tab="porto-kampus">
+                        <span class="porto-tab-icon">🎓</span> Kampus
+                    </button>
                 </div>
-                <div class="col-lg-5 mr-auto align-self-center foundation">
-                    <h3 class="mb-4">Foundation</h3>
-                    <p>Website ini merupakan komitmen yang dikelola oleh Divisi Sosial & Kebersamaan dari Manajemen VSN. VSN Foundation bergerak dalam kegiatan sosial dan kemanusiaan sebagai wujud tanggung jawab sosial dari Victory System Network kepada mereka yang membutuhkan. Peran saya dalam membuat website ini yaitu mengembangkan di sisi Back End dan Front End pada website ini yang di buat oleh rekan saya yaitu yang Bernama Reonaldus Maxmillian.</p>
-                    <div class="icon">
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-lg btn-square btn-outline-primary me-2" target="_blank"><i class="fab fa-html5"></i></a>
-                            <a class="btn btn-lg btn-square btn-outline-primary me-2" target="_blank"><i class="fab fa-css3-alt"></i></a>
-                            <a class="btn btn-lg btn-square btn-outline-primary me-2" target="_blank"><i class="fab fa-bootstrap"></i></a>
-                            <a class="btn btn-lg btn-square btn-outline-primary me-2" target="_blank"><i class="fab fa-php"></i></a>
-                            <a class="btn btn-lg btn-square btn-outline-primary me-2" target="_blank"><img src="assets/img/codeigniter.png" width="30" alt=""></a>
-                            <a class="btn btn-lg btn-square btn-outline-primary me-2" target="_blank"><i class="fa fa-database "></i></a>
-                        </div>
-                    </div>
-                    <a href="https://vsn-foundation.mci-world.com/Home" target="_blank"><button class="btn btn-lg btn-primary my-4">View It Here</button></a>
-                </div>
-            </div>
 
-            <div class="row g-5wow detail-portofolio wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6 mb-5">
-                    <img src="assets/img/web-undangan.png" alt="" class="img-fluid">
-                </div>
-                <div class="col-lg-5 ml-auto align-self-center">
-                    <h3 class="mb-4">Undangan Reuni Akbar</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque quia mollitia ea iure. Provident voluptatem ex quidem ab dolor, ratione iure similique voluptates? Obcaecati ab eveniet numquam, tempore odio voluptas.</p>
-                    <div class="icon">
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-lg btn-square btn-outline-primary me-2" target="_blank"><i class="fab fa-html5"></i></a>
-                            <a class="btn btn-lg btn-square btn-outline-primary me-2" target="_blank"><i class="fab fa-css3-alt"></i></a>
-                            <a class="btn btn-lg btn-square btn-outline-primary me-2" target="_blank"><i class="fab fa-js"></i></a>
-                            <a class="btn btn-lg btn-square btn-outline-primary me-2" target="_blank"><i class="fab fa-bootstrap"></i></a>
-                            <a class="btn btn-lg btn-square btn-outline-primary me-2" target="_blank"><i class="fab fa-php"></i></a>
-                            <a class="btn btn-lg btn-square btn-outline-primary me-2" target="_blank"><i class="fa fa-database "></i></a>
+                <!-- Tab: Project -->
+                <div id="porto-project" class="porto-tab-pane active">
+                    <div class="row g-4">
+                        <!-- VSN Foundation -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="porto-card" data-project="foundation">
+                                <div class="porto-card-img">
+                                    <span class="porto-badge">PROJECT</span>
+                                    <div class="porto-slides-wrap">
+                                        <div class="porto-slide active">
+                                            <img src="assets/img/foundation/vsn-foundation1.png" alt="VSN Foundation 1" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/foundation/vsn-foundation2.png" alt="VSN Foundation 2" class="porto-slide-image">
+                                        </div>
+                                    </div>
+                                    <div class="porto-hover-overlay">
+                                        <span>▶ Klik untuk lihat detail</span>
+                                    </div>
+                                    <div class="porto-dots">
+                                        <span class="porto-dot active"></span>
+                                        <span class="porto-dot"></span>
+                                    </div>
+                                </div>
+                                <div class="porto-card-body">
+                                    <span class="porto-label">PROJECT</span>
+                                    <h5 class="porto-title">Foundation</h5>
+                                    <p class="porto-desc">Website ini merupakan komitmen yang dikelola oleh Divisi Sosial & Kebersamaan dari Manajemen VSN. VSN Foundation bergerak dalam kegiatan sosial dan kemanusiaan sebagai wujud tanggung jawab sosial...</p>
+                                    <a href="https://vsn-foundation.mci-world.com/Home" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary porto-view-link">View It Here</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Marker Maps -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="porto-card" data-project="marker-maps">
+                                <div class="porto-card-img">
+                                    <span class="porto-badge">PROJECT</span>
+                                    <div class="porto-slides-wrap">
+                                        <div class="porto-slide active">
+                                            <img src="assets/img/marker/marker1.png" alt="Add / Edit Marker – Geoman" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/marker/marker2.png" alt="Interactive Map View" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/marker/marker3.png" alt="Custom Marker Form" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/marker/marker4.png" alt="Polyline & Polygon" class="porto-slide-image">
+                                        </div>
+                                    </div>
+                                    <div class="porto-hover-overlay">
+                                        <span>▶ Klik untuk lihat detail</span>
+                                    </div>
+                                    <div class="porto-dots">
+                                        <span class="porto-dot active"></span>
+                                        <span class="porto-dot"></span>
+                                        <span class="porto-dot"></span>
+                                        <span class="porto-dot"></span>
+                                    </div>
+                                </div>
+                                <div class="porto-card-body">
+                                    <span class="porto-label">PROJECT</span>
+                                    <h5 class="porto-title">Marker Maps – Leaflet.js</h5>
+                                    <p class="porto-desc">Migrasi dari Google Earth ke web-based interactive map menggunakan Leaflet.js & Geoman.js. Tim dapat mengelola marker, polyline, dan polygon untuk pemetaan lokasi perangkat dan wilayah provider secara real-time, terintegrasi langsung ke sistem tanpa pertukaran file manual.</p>
+                                    <div class="porto-tags-wrap">
+                                        <span class="porto-tag">Leaflet.js</span>
+                                        <span class="porto-tag">Geoman.js</span>
+                                        <span class="porto-tag">JavaScript</span>
+                                        <span class="porto-tag">JSON</span>
+                                        <span class="porto-tag">Laravel</span>
+                                        <span class="porto-tag">PHP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- System Ticketing -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="porto-card" data-project="ticketing">
+                                <div class="porto-card-img">
+                                    <span class="porto-badge porto-badge-teal">IT Support</span>
+                                    <div class="porto-slides-wrap">
+                                        <div class="porto-slide active">
+                                            <img src="assets/img/ticketing/ticketing1.png" alt="Form Buat Tiket" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/ticketing/ticketing2.png" alt="Dashboard Tiket" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/ticketing/ticketing3.png" alt="Detail Tiket" class="porto-slide-image">
+                                        </div>
+                                    </div>
+                                    <div class="porto-hover-overlay">
+                                        <span>▶ Klik untuk lihat detail</span>
+                                    </div>
+                                    <div class="porto-dots">
+                                        <span class="porto-dot active"></span>
+                                        <span class="porto-dot"></span>
+                                        <span class="porto-dot"></span>
+                                    </div>
+                                </div>
+                                <div class="porto-card-body">
+                                    <span class="porto-label">PROJECT</span>
+                                    <h5 class="porto-title">System Ticketing IT Support</h5>
+                                    <p class="porto-desc">Sistem ticketing berbasis web untuk manajemen permintaan IT Support internal perusahaan. User dapat mengajukan request yang masuk dengan status Waiting, lalu Staff IT melakukan assign...</p>
+                                    <div class="porto-tags-wrap">
+                                        <span class="porto-tag">Laravel</span>
+                                        <span class="porto-tag">PHP</span>
+                                        <span class="porto-tag">MySQL</span>
+                                        <span class="porto-tag">Bootstrap</span>
+                                        <span class="porto-tag">JavaScript</span>
+                                        <span class="porto-tag">jQuery</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Web Revamp -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="porto-card" data-project="revamp">
+                                <div class="porto-card-img">
+                                    <span class="porto-badge porto-badge-orange">Revamp</span>
+                                    <div class="porto-slides-wrap">
+                                        <div class="porto-slide active">
+                                            <img src="assets/img/revamp/revamp1.png" alt="Old Design – Before" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/revamp/revamp2.png" alt="New Design – After" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/revamp/revamp3.png" alt="Mobile Responsive" class="porto-slide-image">
+                                        </div>
+                                    </div>
+                                    <div class="porto-hover-overlay">
+                                        <span>▶ Klik untuk lihat detail</span>
+                                    </div>
+                                    <div class="porto-dots">
+                                        <span class="porto-dot active"></span>
+                                        <span class="porto-dot"></span>
+                                        <span class="porto-dot"></span>
+                                    </div>
+                                </div>
+                                <div class="porto-card-body">
+                                    <span class="porto-label">PROJECT</span>
+                                    <h5 class="porto-title">Web Revamp – Build from Scratch</h5>
+                                    <p class="porto-desc">Revamp total sistem OSS dari Laravel 5 → Laravel 12 & Bootstrap 3 → Bootstrap 5. Menyelesaikan masalah N+1 query, restrukturisasi database, dan migrasi ke arsitektur yang lebih modular dan dinamis.</p>
+                                    <div class="porto-tags-wrap">
+                                        <span class="porto-tag">Laravel 12</span>
+                                        <span class="porto-tag">PHP</span>
+                                        <span class="porto-tag">MySQL</span>
+                                        <span class="porto-tag">Bootstrap 5</span>
+                                        <span class="porto-tag">JavaScript</span>
+                                        <span class="porto-tag">jQuery</span>
+                                        <span class="porto-tag">JWT</span>
+                                        <span class="porto-tag">Octane</span>
+                                        <span class="porto-tag">Swoole</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Automation Work Order -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="porto-card" data-project="automation">
+                                <div class="porto-card-img">
+                                    <span class="porto-badge porto-badge-green">Automation</span>
+                                    <div class="porto-slides-wrap">
+                                        <div class="porto-slide active" style="background: linear-gradient(135deg, #0a2a1a 0%, #0f4a2a 100%);">
+                                            <i class="bi bi-image porto-slide-icon"></i>
+                                            <span class="porto-slide-label">Work Order Dashboard</span>
+                                        </div>
+                                        <div class="porto-slide" style="background: linear-gradient(135deg, #082015 0%, #0d3a22 100%);">
+                                            <i class="bi bi-image porto-slide-icon"></i>
+                                            <span class="porto-slide-label">Report & Monitoring</span>
+                                        </div>
+                                        <div class="porto-slide" style="background: linear-gradient(135deg, #0c2a1c 0%, #124530 100%);">
+                                            <i class="bi bi-image porto-slide-icon"></i>
+                                            <span class="porto-slide-label">Assignment Flow</span>
+                                        </div>
+                                    </div>
+                                    <div class="porto-hover-overlay">
+                                        <span>▶ Klik untuk lihat detail</span>
+                                    </div>
+                                    <div class="porto-dots">
+                                        <span class="porto-dot active"></span>
+                                        <span class="porto-dot"></span>
+                                        <span class="porto-dot"></span>
+                                    </div>
+                                </div>
+                                <div class="porto-card-body">
+                                    <span class="porto-label">PROJECT</span>
+                                    <h5 class="porto-title">Automation Work Order</h5>
+                                    <p class="porto-desc">Otomasi alur work order dari assignment hingga reporting dengan job queue.</p>
+                                    <div class="porto-tags-wrap">
+                                        <span class="porto-tag">Node.js</span>
+                                        <span class="porto-tag">Laravel</span>
+                                        <span class="porto-tag">QueueJob</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <a href="https://reuniakbar.000webhostapp.com/" target="_blank"><button class="btn btn-lg btn-primary my-4">View It Here</button></a>
                 </div>
-            </div>
-            
+
+                <!-- Tab: Performance Optimization -->
+                <div id="porto-perf" class="porto-tab-pane">
+                    <div class="row g-4">
+                        <!-- Dashboard Chart.js -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="porto-card" data-project="chart-perf">
+                                <div class="porto-card-img">
+                                    <span class="porto-badge porto-badge-red">Optimization</span>
+                                    <div class="porto-slides-wrap">
+                                        <div class="porto-slide active">
+                                            <img src="assets/img/performance/before-dashboard.png" alt="Before Dashboard" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/performance/after-dashboard.png" alt="After Dashboard" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/performance/dashboard-klien.png" alt="Dashboard Klien" class="porto-slide-image">
+                                        </div>
+                                    </div>
+                                    <div class="porto-hover-overlay">
+                                        <span>▶ Klik untuk lihat detail</span>
+                                    </div>
+                                    <div class="porto-dots">
+                                        <span class="porto-dot active"></span>
+                                        <span class="porto-dot"></span>
+                                        <span class="porto-dot"></span>
+                                    </div>
+                                </div>
+                                <div class="porto-card-body">
+                                    <span class="porto-label">PERFORMANCE</span>
+                                    <h5 class="porto-title">Performa Dashboard Chart.js</h5>
+                                    <p class="porto-desc">Melakukan optimasi performa pada fitur dashboard chart yang sebelumnya mengonsumsi memory hingga ~2.9GB per tab dan menyebabkan UI freeze saat filter data 1 bulan, sehingga aplikasi tidak dapat digunakan...</p>
+                                    <div class="porto-tags-wrap">
+                                        <span class="porto-tag">JavaScript (ES6+)</span>
+                                        <span class="porto-tag">Web Worker API</span>
+                                        <span class="porto-tag">Chart.js</span>
+                                        <span class="porto-tag">Laravel</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Kampus -->
+                <div id="porto-kampus" class="porto-tab-pane">
+                    <div class="row g-4">
+                        <!-- ChatBot AI -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="porto-card" data-project="chatbot-ai">
+                                <div class="porto-card-img">
+                                    <span class="porto-badge porto-badge-purple">Kampus</span>
+                                    <div class="porto-slides-wrap">
+                                        <div class="porto-slide active">
+                                            <img src="assets/img/chatbot/chatbot1.png" alt="Chat Interface" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/chatbot/chatbot2.png" alt="RAG Pipeline" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/chatbot/chatbot3.png" alt="Knowledge Base" class="porto-slide-image">
+                                        </div>
+                                    </div>
+                                    <div class="porto-hover-overlay">
+                                        <span>▶ Klik untuk lihat detail</span>
+                                    </div>
+                                    <div class="porto-dots">
+                                        <span class="porto-dot active"></span>
+                                        <span class="porto-dot"></span>
+                                        <span class="porto-dot"></span>
+                                    </div>
+                                </div>
+                                <div class="porto-card-body">
+                                    <span class="porto-label">KAMPUS</span>
+                                    <h5 class="porto-title">ChatBot AI – RAG Engine</h5>
+                                    <p class="porto-desc">Membangun chatbot AI berbasis RAG (Retrieval-Augmented Generation) menggunakan Node.js yang terintegrasi langsung dengan WhatsApp melalui whatsapp-web.js. Chatbot ini dirancang untuk membantu...</p>
+                                    <div class="porto-tags-wrap">
+                                        <span class="porto-tag">Node.js</span>
+                                        <span class="porto-tag">WhatsApp-Web.js</span>
+                                        <span class="porto-tag">OpenRouter API</span>
+                                        <span class="porto-tag">LLaMA 3.3 70B</span>
+                                        <span class="porto-tag">RAG Engine</span>
+                                        <span class="porto-tag">PDF Parser</span>
+                                        <span class="porto-tag">Excel/JSON</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- System POS -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="porto-card" data-project="pos">
+                                <div class="porto-card-img">
+                                    <span class="porto-badge porto-badge-teal">Kampus</span>
+                                    <div class="porto-slides-wrap">
+                                        <div class="porto-slide active">
+                                            <img src="assets/img/POS-SYSTEM/pos1.png" alt="POS Dashboard" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/POS-SYSTEM/pos2.png" alt="Kasir Interface" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/POS-SYSTEM/pos3.png" alt="Laporan Penjualan" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/POS-SYSTEM/pos4.png" alt="Admin & Master Data" class="porto-slide-image">
+                                        </div>
+                                    </div>
+                                    <div class="porto-hover-overlay">
+                                        <span>▶ Klik untuk lihat detail</span>
+                                    </div>
+                                    <div class="porto-dots">
+                                        <span class="porto-dot active"></span>
+                                        <span class="porto-dot"></span>
+                                        <span class="porto-dot"></span>
+                                        <span class="porto-dot"></span>
+                                    </div>
+                                </div>
+                                <div class="porto-card-body">
+                                    <span class="porto-label">KAMPUS</span>
+                                    <h5 class="porto-title">System POS Sederhana</h5>
+                                    <p class="porto-desc">Aplikasi Point of Sale (POS) sederhana untuk UMKM yang dibangun menggunakan Laravel 12 & Bootstrap 5. Terdapat dua sisi: User Side untuk proses transaksi kasir dengan fitur keranjang, kalkulasi harga...</p>
+                                    <div class="porto-tags-wrap">
+                                        <span class="porto-tag">Laravel 12</span>
+                                        <span class="porto-tag">PHP</span>
+                                        <span class="porto-tag">MySQL</span>
+                                        <span class="porto-tag">Bootstrap 5</span>
+                                        <span class="porto-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- Service End -->
+
+    <!-- Portfolio Modal -->
+    <div id="porto-modal-overlay" class="porto-modal-overlay" style="display:none;">
+        <button class="porto-modal-close" id="porto-modal-close">✕</button>
+        <div class="porto-modal-card">
+            <div class="porto-modal-img-area">
+                <span class="porto-modal-counter" id="porto-modal-counter">1/3</span>
+                <button class="porto-modal-nav porto-modal-prev" id="porto-modal-prev">&#8249;</button>
+                <div class="porto-modal-slides-wrap" id="porto-modal-slides"></div>
+                <button class="porto-modal-nav porto-modal-next" id="porto-modal-next">&#8250;</button>
+                <div class="porto-modal-dots" id="porto-modal-dots"></div>
+            </div>
+            <div class="porto-modal-body">
+                <span class="porto-modal-badge" id="porto-modal-badge">PROJECT</span>
+                <h3 class="porto-modal-title" id="porto-modal-title"></h3>
+                <p class="porto-modal-desc" id="porto-modal-desc"></p>
+                <div class="porto-modal-tags-wrap" id="porto-modal-tags"></div>
+                <a id="porto-modal-view-link" class="btn btn-sm btn-primary porto-modal-view-link" href="#" target="_blank" rel="noopener noreferrer" style="display:none;">View It Here</a>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal End -->
+
+    <!-- Portfolio Image Lightbox -->
+    <div id="porto-image-lightbox" class="porto-image-lightbox" style="display:none;">
+        <button class="porto-image-lightbox-close" id="porto-image-lightbox-close">✕</button>
+        <img id="porto-image-lightbox-img" src="" alt="Portfolio Full Image">
+    </div>
+    <!-- Portfolio Image Lightbox End -->
 
     <!-- Copyright Start Footer -->
     <footer>
@@ -524,7 +866,7 @@
                             
                             <h3>Hubungi Kami</h3>
                             <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=putravincent746@gmail.com" target="_blank">putravincent746@gmail.com</a>
-                            <p>Terima kasih telah menggulir ke bawah sini! jangan sungkan untuk menghubungi saya jika Anda memiliki pertanyaan atau ingin berdiskusi lebih lanjut tentang web portfolio</p>
+                            <p>Terima kasih telah menggulir ke bawah sini! jangan sungkan untuk menghubungi saya jika Anda memiliki pertanyaan atau ingin berdiskusi lebih lanjut tentang web portofolio</p>
                             
                         </div>
                         <div class="col-md-2"></div>
@@ -533,7 +875,7 @@
                             <a href="#home"><p>Home</p></a>
                             <a href="#about"><p>About me</p></a>
                             <a href="#skill"><p>Skills & Experience</p></a>
-                            <a href="#portofolio"><p>Portfolio</p></a>
+                            <a href="#portofolio"><p>Portofolio</p></a>
                             <a href="#contact"><p>Contact</p></a>
                         </div>
                     </div>
@@ -573,6 +915,310 @@
     <!-- Template Javascript -->
     <script src="assets/js/main.js"></script>
     
+    <!-- Portfolio Cards: Tabs, Auto-Slider, Modal -->
+    <script>
+        (function () {
+            // === MODAL ===
+            var modalIdx = 0;
+            var modalTotal = 0;
+            var modalTimer = null;
+            var lightbox = document.getElementById('porto-image-lightbox');
+            var lightboxImg = document.getElementById('porto-image-lightbox-img');
+            var SLIDE_MS = 3000;
+
+            var projects = {
+                'foundation': {
+                    badge: 'PROJECT', badgeClass: '',
+                    title: 'Foundation',
+                    desc: 'Website ini merupakan komitmen yang dikelola oleh Divisi Sosial & Kebersamaan dari Manajemen VSN. VSN Foundation bergerak dalam kegiatan sosial dan kemanusiaan sebagai wujud tanggung jawab sosial dari Victory System Network kepada mereka yang membutuhkan. Peran saya dalam membuat website ini yaitu mengembangkan di sisi Back End dan Front End pada website ini yang di buat oleh rekan saya yaitu yang Bernama Reonaldus Maxmillian.',
+                    tags: ['HTML5', 'CSS3', 'Bootstrap', 'PHP', 'CodeIgniter', 'MySQL'],
+                    viewUrl: 'https://vsn-foundation.mci-world.com/Home',
+                    slides: [
+                        { image: 'assets/img/foundation/vsn-foundation1.png', text: 'Foundation Main Page' },
+                        { image: 'assets/img/foundation/vsn-foundation2.png', text: 'Foundation Feature View' }
+                    ]
+                },
+                'marker-maps': {
+                    badge: 'PROJECT', badgeClass: '',
+                    title: 'Marker Maps – Leaflet.js',
+                    desc: 'Sebelumnya tim menggunakan Google Earth untuk menandai lokasi perangkat dan tiang provider per wilayah, namun file KMZ dikelola secara manual dan tidak terintegrasi ke sistem — rentan miskomunikasi antar tim. Saya membangun fitur peta interaktif menggunakan Leaflet.js + Geoman.js sebagai pengganti Google Earth, di mana tim dapat menambahkan marker, polyline, dan polygon langsung dari browser secara real-time, terhubung ke sistem, dan perubahannya langsung terlihat oleh semua pihak tanpa perlu kirim ulang file.',
+                    tags: ['Leaflet.js', 'Geoman.js', 'JavaScript', 'JSON', 'Laravel', 'PHP'],
+                    slides: [
+                        { image: 'assets/img/marker/marker1.png', text: 'Add / Edit Marker – Geoman' },
+                        { image: 'assets/img/marker/marker2.png', text: 'Interactive Map View' },
+                        { image: 'assets/img/marker/marker3.png', text: 'Custom Marker Form' },
+                        { image: 'assets/img/marker/marker4.png', text: 'Polyline & Polygon' }
+                    ]
+                },
+                'ticketing': {
+                    badge: 'IT Support', badgeClass: 'porto-badge-teal',
+                    title: 'System Ticketing IT Support',
+                    desc: 'Sistem ticketing berbasis web untuk manajemen permintaan IT Support internal perusahaan. User dapat mengajukan request yang masuk dengan status Waiting, lalu Staff IT melakukan assign untuk menangani tiket. Alur status mencakup Progress (sedang ditangani), Pending (menunggu proses eksternal seperti servis), Return to Waiting (re-assign ke teknisi lain), Reject (request dibatalkan/tidak dapat ditangani), hingga Completed (case selesai). Sistem ini meningkatkan visibilitas dan akuntabilitas penanganan kendala IT di seluruh divisi.',
+                    tags: ['Laravel', 'PHP', 'MySQL', 'Bootstrap', 'JavaScript', 'jQuery'],
+                    slides: [
+                        { image: 'assets/img/ticketing/ticketing1.png', text: 'Form Buat Tiket' },
+                        { image: 'assets/img/ticketing/ticketing2.png', text: 'Dashboard Tiket' },
+                        { image: 'assets/img/ticketing/ticketing3.png', text: 'Detail Tiket' }
+                    ]
+                },
+                'revamp': {
+                    badge: 'Revamp', badgeClass: 'porto-badge-orange',
+                    title: 'Web Revamp – Build from Scratch',
+                    desc: 'Melakukan revamp total sistem OSS (Operation Support System) perusahaan yang sebelumnya dibangun dengan Laravel 5 & Bootstrap 3. Sistem lama memiliki sejumlah masalah kritis: N+1 query, arsitektur database yang tidak terstruktur, fitur yang statis, serta keamanan API yang lemah karena menggunakan custom token tanpa standar yang jelas. Sistem baru dibangun dari nol menggunakan Laravel 12 & Bootstrap 5 dengan perbaikan menyeluruh di berbagai aspek: query dioptimasi, arsitektur lebih modular dan scalable, serta keamanan API ditingkatkan menggunakan JWT Authentication dengan mekanisme refresh token (expire 3 jam) dan access token (expire 3 hari). Selain itu, sistem baru berjalan di atas Laravel Octane + Swoole yang memberikan peningkatan performa signifikan dalam kecepatan pemrosesan request ke backend.',
+                    tags: ['Laravel 12', 'PHP', 'MySQL', 'Bootstrap 5', 'JavaScript', 'jQuery', 'JWT', 'Octane', 'Swoole'],
+                    slides: [
+                        { image: 'assets/img/revamp/revamp1.png', text: 'Old Design – Before' },
+                        { image: 'assets/img/revamp/revamp2.png', text: 'New Design – After' },
+                        { image: 'assets/img/revamp/revamp3.png', text: 'Mobile Responsive' }
+                    ]
+                },
+                'automation': {
+                    badge: 'Automation', badgeClass: 'porto-badge-green',
+                    title: 'Automation Work Order',
+                    desc: 'Otomasi alur work order dari assignment hingga reporting dengan job queue. Sistem mencakup notifikasi otomatis, tracking status real-time, dan laporan performa tim.',
+                    tags: ['Node.js', 'Laravel', 'QueueJob'],
+                    slides: [
+                        { bg: 'linear-gradient(135deg, #0a2a1a 0%, #0f4a2a 100%)', text: 'Work Order Dashboard' },
+                        { bg: 'linear-gradient(135deg, #082015 0%, #0d3a22 100%)', text: 'Report & Monitoring' },
+                        { bg: 'linear-gradient(135deg, #0c2a1c 0%, #124530 100%)', text: 'Assignment Flow' }
+                    ]
+                },
+                'chart-perf': {
+                    badge: 'Optimization', badgeClass: 'porto-badge-red',
+                    title: 'Performa Dashboard Chart.js',
+                    desc: 'Melakukan optimasi performa pada fitur dashboard chart yang sebelumnya mengonsumsi memory hingga ~2.9GB per tab dan menyebabkan UI freeze saat filter data 1 bulan, sehingga aplikasi tidak dapat digunakan secara normal.',
+                    descHtml: '<p>Melakukan optimasi performa pada fitur dashboard chart yang sebelumnya mengonsumsi memory hingga ~2.9GB per tab dan menyebabkan UI freeze saat filter data 1 bulan, sehingga aplikasi tidak dapat digunakan secara normal.</p><p><strong>Solusi yang diterapkan:</strong></p><ul><li>Memindahkan proses rendering Chart.js ke Dedicated Web Worker agar tidak memblokir main thread</li><li>Menerapkan Infinite Scroll untuk membatasi data yang dirender sekaligus</li><li>Implementasi Lazy Loading pada komponen chart</li></ul><p><strong>Hasil:</strong> Memory usage turun dari ~2.9GB menjadi 200–300MB per tab, UI tidak lagi freeze, dan aplikasi berjalan stabil meski memproses data dalam jumlah besar.</p>',
+                    tags: ['JavaScript (ES6+)', 'Web Worker API', 'Chart.js', 'Laravel'],
+                    slides: [
+                        { image: 'assets/img/performance/before-dashboard.png', text: 'Before Dashboard' },
+                        { image: 'assets/img/performance/after-dashboard.png', text: 'After Dashboard' },
+                        { image: 'assets/img/performance/dashboard-klien.png', text: 'Dashboard Klien' }
+                    ]
+                },
+                'chatbot-ai': {
+                    badge: 'Kampus', badgeClass: 'porto-badge-purple',
+                    title: 'ChatBot AI – RAG Engine',
+                    desc: 'Membangun chatbot AI berbasis RAG (Retrieval-Augmented Generation) menggunakan Node.js yang terintegrasi langsung dengan WhatsApp melalui whatsapp-web.js. Chatbot ini dirancang untuk membantu CS dalam menjawab pertanyaan customer secara otomatis dan dinamis. Bot menggunakan model Meta LLaMA 3.3 70B via OpenRouter API sebagai otak AI-nya, sehingga jawaban yang dihasilkan tidak kaku dan tidak bergantung pada keyword statis. Knowledge base bot berasal dari dokumen PDF (informasi operasional toko) dan Excel (data stok barang) yang dikonversi ke format JSON — ketika customer bertanya, bot akan mencari konteks relevan dari dokumen tersebut lalu menghasilkan jawaban yang natural dan akurat.',
+                    tags: ['Node.js', 'WhatsApp-Web.js', 'OpenRouter API', 'LLaMA 3.3 70B', 'RAG Engine', 'PDF Parser', 'Excel/JSON'],
+                    slides: [
+                        { image: 'assets/img/chatbot/chatbot1.png', text: 'Chat Interface' },
+                        { image: 'assets/img/chatbot/chatbot2.png', text: 'RAG Pipeline' },
+                        { image: 'assets/img/chatbot/chatbot3.png', text: 'Knowledge Base' }
+                    ]
+                },
+                'pos': {
+                    badge: 'Kampus', badgeClass: 'porto-badge-teal',
+                    title: 'System POS Sederhana',
+                    desc: 'Aplikasi Point of Sale (POS) sederhana untuk UMKM yang dibangun menggunakan Laravel 12 & Bootstrap 5. Terdapat dua sisi: User Side untuk proses transaksi kasir dengan fitur keranjang, kalkulasi harga otomatis, dan cetak struk; serta Admin Side untuk manajemen master data, monitoring stok masuk, laporan penjualan dan pengeluaran harian/bulanan/tahunan — sehingga owner UMKM dapat memantau arus barang dan keuangan secara real-time.',
+                    tags: ['Laravel 12', 'PHP', 'MySQL', 'Bootstrap 5', 'JavaScript'],
+                    slides: [
+                        { image: 'assets/img/POS-SYSTEM/pos1.png', text: 'POS Dashboard' },
+                        { image: 'assets/img/POS-SYSTEM/pos2.png', text: 'Kasir Interface' },
+                        { image: 'assets/img/POS-SYSTEM/pos3.png', text: 'Laporan Penjualan' },
+                        { image: 'assets/img/POS-SYSTEM/pos4.png', text: 'Admin & Master Data' }
+                    ]
+                }
+            };
+
+            // === TABS ===
+            document.querySelectorAll('.porto-tab-btn').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    document.querySelectorAll('.porto-tab-btn').forEach(function (b) { b.classList.remove('active'); });
+                    document.querySelectorAll('.porto-tab-pane').forEach(function (p) { p.classList.remove('active'); });
+                    btn.classList.add('active');
+                    var pane = document.getElementById(btn.dataset.tab);
+                    if (pane) pane.classList.add('active');
+                });
+            });
+
+            // === CARD AUTO-SLIDER ===
+            function initCardSlider(card) {
+                var slides = card.querySelectorAll('.porto-slide');
+                var dots = card.querySelectorAll('.porto-dot');
+                var idx = 0;
+                if (slides.length <= 1) return;
+
+                function goTo(next) {
+                    slides[idx].classList.remove('active');
+                    dots[idx].classList.remove('active');
+                    idx = (next + slides.length) % slides.length;
+                    slides[idx].classList.add('active');
+                    dots[idx].classList.add('active');
+                }
+
+                setInterval(function () { goTo(idx + 1); }, SLIDE_MS);
+            }
+
+            document.querySelectorAll('.porto-card').forEach(function (card) {
+                initCardSlider(card);
+            });
+
+            function goToModalSlide(next) {
+                var slides = document.querySelectorAll('#porto-modal-slides .porto-slide');
+                var dots = document.querySelectorAll('#porto-modal-dots .porto-dot');
+                if (!slides.length) return;
+                slides[modalIdx].classList.remove('active');
+                dots[modalIdx].classList.remove('active');
+                modalIdx = (next + modalTotal) % modalTotal;
+                slides[modalIdx].classList.add('active');
+                dots[modalIdx].classList.add('active');
+                document.getElementById('porto-modal-counter').textContent = (modalIdx + 1) + '/' + modalTotal;
+            }
+
+            function openModal(projectId) {
+                var p = projects[projectId];
+                if (!p) return;
+
+                modalIdx = 0;
+                modalTotal = p.slides.length;
+
+                var slidesWrap = document.getElementById('porto-modal-slides');
+                slidesWrap.innerHTML = '';
+                p.slides.forEach(function (s, i) {
+                    var div = document.createElement('div');
+                    div.className = 'porto-slide' + (i === 0 ? ' active' : '');
+                    if (s.image) {
+                        div.classList.add('porto-slide-has-image');
+                        div.innerHTML = '<img src="' + s.image + '" alt="' + (s.text || p.title) + '" class="porto-slide-image">';
+                    } else {
+                        div.style.background = s.bg;
+                        div.innerHTML = '<i class="bi bi-image porto-slide-icon" style="font-size:3rem;color:rgba(255,255,255,0.2);margin-bottom:0.6rem;"></i><span class="porto-slide-label" style="color:rgba(255,255,255,0.45);font-size:13px;text-align:center;padding:0 1rem;">' + s.text + '</span>';
+                    }
+                    slidesWrap.appendChild(div);
+                });
+
+                var dotsWrap = document.getElementById('porto-modal-dots');
+                dotsWrap.innerHTML = '';
+                p.slides.forEach(function (_, i) {
+                    var span = document.createElement('span');
+                    span.className = 'porto-dot' + (i === 0 ? ' active' : '');
+                    dotsWrap.appendChild(span);
+                });
+
+                document.getElementById('porto-modal-counter').textContent = '1/' + modalTotal;
+                document.getElementById('porto-modal-badge').textContent = p.badge;
+                document.getElementById('porto-modal-badge').className = 'porto-modal-badge ' + (p.badgeClass || '');
+                document.getElementById('porto-modal-title').textContent = p.title;
+                var modalDesc = document.getElementById('porto-modal-desc');
+                if (p.descHtml) {
+                    modalDesc.innerHTML = p.descHtml;
+                } else {
+                    modalDesc.textContent = p.desc;
+                }
+
+                var tagsWrap = document.getElementById('porto-modal-tags');
+                tagsWrap.innerHTML = '';
+                p.tags.forEach(function (tag) {
+                    var span = document.createElement('span');
+                    span.className = 'porto-tag';
+                    span.textContent = tag;
+                    tagsWrap.appendChild(span);
+                });
+
+                var modalViewLink = document.getElementById('porto-modal-view-link');
+                if (p.viewUrl) {
+                    modalViewLink.href = p.viewUrl;
+                    modalViewLink.style.display = 'inline-flex';
+                } else {
+                    modalViewLink.href = '#';
+                    modalViewLink.style.display = 'none';
+                }
+
+                document.getElementById('porto-modal-overlay').style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+
+                clearInterval(modalTimer);
+                modalTimer = setInterval(function () { goToModalSlide(modalIdx + 1); }, SLIDE_MS);
+            }
+
+            function closeModal() {
+                document.getElementById('porto-modal-overlay').style.display = 'none';
+                document.body.style.overflow = '';
+                clearInterval(modalTimer);
+                closeLightbox();
+            }
+
+            function openLightbox(src, alt) {
+                if (!src) return;
+                lightboxImg.src = src;
+                lightboxImg.alt = alt || 'Portfolio Full Image';
+                lightbox.style.display = 'flex';
+            }
+
+            function closeLightbox() {
+                lightbox.style.display = 'none';
+                lightboxImg.src = '';
+            }
+
+            document.querySelectorAll('.porto-card').forEach(function (card) {
+                card.addEventListener('click', function () {
+                    if (card.dataset.project) {
+                        openModal(card.dataset.project);
+                    }
+                });
+            });
+
+            document.querySelectorAll('.porto-view-link').forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            });
+
+            document.getElementById('porto-modal-view-link').addEventListener('click', function (e) {
+                e.stopPropagation();
+                if (!this.getAttribute('href') || this.getAttribute('href') === '#') {
+                    e.preventDefault();
+                        return;
+                }
+                });
+
+            document.getElementById('porto-modal-slides').addEventListener('click', function (e) {
+                var target = e.target;
+                if (target.classList.contains('porto-slide-image')) {
+                    openLightbox(target.getAttribute('src'), target.getAttribute('alt'));
+                }
+            });
+
+            document.getElementById('porto-image-lightbox-close').addEventListener('click', function (e) {
+                e.stopPropagation();
+                closeLightbox();
+            });
+
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) closeLightbox();
+            });
+
+            document.getElementById('porto-modal-prev').addEventListener('click', function (e) {
+                e.stopPropagation();
+                clearInterval(modalTimer);
+                goToModalSlide(modalIdx - 1);
+                modalTimer = setInterval(function () { goToModalSlide(modalIdx + 1); }, SLIDE_MS);
+            });
+
+            document.getElementById('porto-modal-next').addEventListener('click', function (e) {
+                e.stopPropagation();
+                clearInterval(modalTimer);
+                goToModalSlide(modalIdx + 1);
+                modalTimer = setInterval(function () { goToModalSlide(modalIdx + 1); }, SLIDE_MS);
+            });
+
+            document.getElementById('porto-modal-close').addEventListener('click', closeModal);
+
+            document.getElementById('porto-modal-overlay').addEventListener('click', function (e) {
+                if (e.target === this) closeModal();
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key !== 'Escape') return;
+                if (lightbox.style.display === 'flex') {
+                    closeLightbox();
+                    return;
+                }
+                closeModal();
+            });
+        })();
+    </script>
+
     <!-- Accordion Chevron Animation -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
