@@ -652,17 +652,17 @@
                                 <div class="porto-card-img">
                                     <span class="porto-badge porto-badge-green">Automation</span>
                                     <div class="porto-slides-wrap">
-                                        <div class="porto-slide active" style="background: linear-gradient(135deg, #0a2a1a 0%, #0f4a2a 100%);">
-                                            <i class="bi bi-image porto-slide-icon"></i>
-                                            <span class="porto-slide-label">Work Order Dashboard</span>
+                                        <div class="porto-slide active">
+                                            <img src="assets/img/automation/automation1.png" alt="Work Order Dashboard" class="porto-slide-image">
                                         </div>
-                                        <div class="porto-slide" style="background: linear-gradient(135deg, #082015 0%, #0d3a22 100%);">
-                                            <i class="bi bi-image porto-slide-icon"></i>
-                                            <span class="porto-slide-label">Report & Monitoring</span>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/automation/automation2.png" alt="Report & Monitoring" class="porto-slide-image">
                                         </div>
-                                        <div class="porto-slide" style="background: linear-gradient(135deg, #0c2a1c 0%, #124530 100%);">
-                                            <i class="bi bi-image porto-slide-icon"></i>
-                                            <span class="porto-slide-label">Assignment Flow</span>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/automation/automation3.png" alt="Assignment Flow" class="porto-slide-image">
+                                        </div>
+                                        <div class="porto-slide">
+                                            <img src="assets/img/automation/automation4.png" alt="Sync & OSS Integration" class="porto-slide-image">
                                         </div>
                                     </div>
                                     <div class="porto-hover-overlay">
@@ -672,16 +672,24 @@
                                         <span class="porto-dot active"></span>
                                         <span class="porto-dot"></span>
                                         <span class="porto-dot"></span>
+                                        <span class="porto-dot"></span>
                                     </div>
                                 </div>
                                 <div class="porto-card-body">
                                     <span class="porto-label">PROJECT</span>
                                     <h5 class="porto-title">Automation Work Order</h5>
-                                    <p class="porto-desc">Otomasi alur work order dari assignment hingga reporting dengan job queue.</p>
+                                    <p class="porto-desc">Sebelumnya tim Dispatch harus melakukan proses manual yang panjang: login ke web client, export data Work Order customer dalam format Excel, mengolah data secara manual, lalu mengupload ke sistem OSS. Proses ini memakan waktu dan rawan error...</p>
                                     <div class="porto-tags-wrap">
                                         <span class="porto-tag">Node.js</span>
+                                        <span class="porto-tag">Web Scraping</span>
+                                        <span class="porto-tag">REST API</span>
+                                        <span class="porto-tag">Swagger</span>
                                         <span class="porto-tag">Laravel</span>
-                                        <span class="porto-tag">QueueJob</span>
+                                        <span class="porto-tag">PHP</span>
+                                        <span class="porto-tag">MySQL</span>
+                                        <span class="porto-tag">JavaScript</span>
+                                        <span class="porto-tag">jQuery</span>
+                                        <span class="porto-tag">Bootstrap</span>
                                     </div>
                                 </div>
                             </div>
@@ -975,12 +983,13 @@
                 'automation': {
                     badge: 'Automation', badgeClass: 'porto-badge-green',
                     title: 'Automation Work Order',
-                    desc: 'Otomasi alur work order dari assignment hingga reporting dengan job queue. Sistem mencakup notifikasi otomatis, tracking status real-time, dan laporan performa tim.',
-                    tags: ['Node.js', 'Laravel', 'QueueJob'],
+                    desc: 'Sebelumnya tim Dispatch harus melakukan proses manual yang panjang: login ke web client, export data Work Order customer dalam format Excel, mengolah data secara manual, lalu mengupload ke sistem OSS. Proses ini memakan waktu dan rawan human error. Saya membangun fitur Automation Web Scraping menggunakan Node.js yang mensimulasikan perilaku manusia secara otomatis — login ke web client, melakukan filter data, klik tombol export, menyimpan file Excel ke storage, kemudian mengolah dan mengirimkan data via REST API ke sistem OSS. Tim Dispatch cukup klik tombol Sync dan seluruh proses berjalan otomatis di background tanpa intervensi manual.',
+                    tags: ['Node.js', 'Web Scraping', 'REST API', 'Swagger', 'Laravel', 'PHP', 'MySQL', 'JavaScript', 'jQuery', 'Bootstrap'],
                     slides: [
-                        { bg: 'linear-gradient(135deg, #0a2a1a 0%, #0f4a2a 100%)', text: 'Work Order Dashboard' },
-                        { bg: 'linear-gradient(135deg, #082015 0%, #0d3a22 100%)', text: 'Report & Monitoring' },
-                        { bg: 'linear-gradient(135deg, #0c2a1c 0%, #124530 100%)', text: 'Assignment Flow' }
+                        { image: 'assets/img/automation/automation1.png', text: 'Work Order Dashboard' },
+                        { image: 'assets/img/automation/automation2.png', text: 'Report & Monitoring' },
+                        { image: 'assets/img/automation/automation3.png', text: 'Assignment Flow' },
+                        { image: 'assets/img/automation/automation4.png', text: 'Sync & OSS Integration' }
                     ]
                 },
                 'chart-perf': {
