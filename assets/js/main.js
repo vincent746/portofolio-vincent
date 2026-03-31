@@ -32,6 +32,34 @@ document.addEventListener('keydown', function(event) {
         }
     });
 
+    // Custom scrollspy — replaces Bootstrap's broken data-bs-spy on this layout
+    var nav_sections = ['#home', '#about', '#skill', '#portofolio', '#contact'];
+    var nav_offset = 60;
+
+    $(window).scroll(function () {
+        var $win        = $(this);
+        var scroll_top  = $win.scrollTop() + nav_offset;
+        var win_bottom  = $win.scrollTop() + $win.height();
+        var active_section = nav_sections[0];
+
+        for (var i = nav_sections.length - 1; i >= 0; i--) {
+            var $section    = $(nav_sections[i]);
+            if (!$section.length) continue;
+
+            var section_top = $section.offset().top;
+            // Last section (#contact): activate the moment its top enters the viewport
+            var threshold   = (i === nav_sections.length - 1) ? win_bottom : scroll_top;
+
+            if (section_top <= threshold) {
+                active_section = nav_sections[i];
+                break;
+            }
+        }
+
+        $('.navbar-nav .nav-link').removeClass('active');
+        $('.navbar-nav .nav-link[href="' + active_section + '"]').addClass('active');
+    });
+
 
     // Smooth scrolling on the navbar links
     $(".navbar-nav a").on('click', function (event) {
