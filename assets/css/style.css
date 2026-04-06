@@ -115,9 +115,10 @@ body {
 
 /*** Header ***/
 #home {
-    background: url(../img/vincent.png) left top no-repeat;
-    background-position-x: 33%;
-    background-position-y: 3%;
+    background: #1a1040 !important;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0 !important;
 }
 
 #home .nama {
@@ -126,6 +127,59 @@ body {
 
 #home .img-user .img-fluid {
     margin-top: 40px;
+}
+
+/* Hero glow orbs */
+.hero-glow {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(127, 119, 221, 0.3);
+    filter: blur(60px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero-glow-1 {
+    width: 220px;
+    height: 220px;
+    top: 5%;
+    right: 18%;
+}
+
+.hero-glow-2 {
+    width: 160px;
+    height: 160px;
+    bottom: 10%;
+    right: 6%;
+}
+
+.hero-glow-3 {
+    width: 180px;
+    height: 180px;
+    top: 45%;
+    left: 2%;
+}
+
+#home .container {
+    position: relative;
+    z-index: 1;
+}
+
+#home h3 {
+    color: #AFA9EC !important;
+}
+
+#home h1 {
+    color: #ffffff !important;
+}
+
+#home h2,
+#home .typed-text-output {
+    color: #ffffff !important;
+}
+
+#home .typed-cursor {
+    color: #ffffff !important;
 }
 
 .display-3 {
@@ -883,7 +937,7 @@ footer .sosmed .btn-square {
     }
 
     #home {
-        background: none;
+        background: #1a1040 !important;
     }
 
     #skill .experience .tab-content ul li {
@@ -902,4 +956,99 @@ footer .sosmed .btn-square {
         margin-left: 0px;
     }
 
+}
+
+/* ============================================
+   Section Background Alternation
+   ============================================ */
+#skill {
+    background: #F5F4FF !important;
+    border-top: 1px solid #CECBF6;
+    border-bottom: 1px solid #CECBF6;
+}
+
+footer,
+#contact {
+    background: #1a1040 !important;
+}
+
+/* ============================================
+   Skill Tier Pills
+   ============================================ */
+.skill-tier-label {
+    display: block;
+    font-size: 11px;
+    color: #888;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-top: 14px;
+    margin-bottom: 7px;
+}
+
+.skill-tier-label:first-child {
+    margin-top: 0;
+}
+
+.skill-tier-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.skill-pill-core {
+    display: inline-flex;
+    align-items: center;
+    background: #7F77DD;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 13px;
+    border-radius: 99px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.skill-pill-familiar {
+    display: inline-flex;
+    align-items: center;
+    background: #EEEDFE;
+    color: #3C3489;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 99px;
+    white-space: nowrap;
+}
+
+.skill-pill-support {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    color: #888;
+    font-size: 12px;
+    padding: 4px 11px;
+    border-radius: 99px;
+    border: 0.5px solid #ccc;
+    white-space: nowrap;
+}
+
+/* ============================================
+   Footer Gradient Transition
+   ============================================ */
+.footer-transition-section {
+    background: linear-gradient(to bottom, #F5F4FF, #2d1f6e);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-transition-tagline {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.footer-transition-sub {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.78);
+    margin-bottom: 0;
 }
