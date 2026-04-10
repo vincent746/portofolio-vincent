@@ -783,7 +783,10 @@
         <!-- Portfolio Image Lightbox -->
         <div id="porto-image-lightbox" class="porto-image-lightbox" style="display:none;">
             <button class="porto-image-lightbox-close" id="porto-image-lightbox-close">✕</button>
+            <button class="porto-lb-nav porto-lb-prev" id="porto-lb-prev">&#8249;</button>
             <img id="porto-image-lightbox-img" src="" alt="Portfolio Full Image">
+            <button class="porto-lb-nav porto-lb-next" id="porto-lb-next">&#8250;</button>
+            <span class="porto-lb-counter" id="porto-lb-counter"></span>
         </div>
         <!-- Portfolio Image Lightbox End -->
 
@@ -856,11 +859,21 @@
     
     <!-- Portfolio Cards: Tabs, Auto-Slider, Modal -->
     <script>
+        // scroll to top on refresh
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        window.addEventListener('load', function () {
+            window.scrollTo(0, 0);
+        });
+        
         (function () {
             // === MODAL ===
             var modalIdx = 0;
             var modalTotal = 0;
             var modalTimer = null;
+            var lbImages = [];
+            var lbIdx = 0;
             var lightbox = document.getElementById('porto-image-lightbox');
             var lightboxImg = document.getElementById('porto-image-lightbox-img');
             var SLIDE_MS = 3000;
@@ -1011,6 +1024,7 @@
 
                 modalIdx = 0;
                 modalTotal = p.slides.length;
+                lbImages = [];
 
                 var slidesWrap = document.getElementById('porto-modal-slides');
                 slidesWrap.innerHTML = '';
@@ -1020,6 +1034,7 @@
                     if (s.image) {
                         div.classList.add('porto-slide-has-image');
                         div.innerHTML = '<img src="' + s.image + '" alt="' + (s.text || p.title) + '" class="porto-slide-image">';
+                        lbImages.push({ src: s.image, alt: s.text || p.title });
                     } else {
                         div.style.background = s.bg;
                         div.innerHTML = '<i class="bi bi-image porto-slide-icon" style="font-size:3rem;color:rgba(255,255,255,0.2);margin-bottom:0.6rem;"></i><span class="porto-slide-label" style="color:rgba(255,255,255,0.45);font-size:13px;text-align:center;padding:0 1rem;">' + s.text + '</span>';
@@ -1078,10 +1093,24 @@
                 closeLightbox();
             }
 
-            function openLightbox(src, alt) {
-                if (!src) return;
-                lightboxImg.src = src;
-                lightboxImg.alt = alt || 'Portfolio Full Image';
+            function goToLbSlide(next) {
+                if (!lbImages.length) return;
+                lbIdx = (next + lbImages.length) % lbImages.length;
+                lightboxImg.src = lbImages[lbIdx].src;
+                lightboxImg.alt = lbImages[lbIdx].alt;
+                document.getElementById('porto-lb-counter').textContent = (lbIdx + 1) + '/' + lbImages.length;
+            }
+
+            function openLightbox(startSrc) {
+                if (!lbImages.length) return;
+                var idx = lbImages.findIndex(function (img) { return img.src === startSrc; });
+                lbIdx = idx >= 0 ? idx : 0;
+                lightboxImg.src = lbImages[lbIdx].src;
+                lightboxImg.alt = lbImages[lbIdx].alt;
+                var showNav = lbImages.length > 1;
+                document.getElementById('porto-lb-prev').style.display = showNav ? 'flex' : 'none';
+                document.getElementById('porto-lb-next').style.display = showNav ? 'flex' : 'none';
+                document.getElementById('porto-lb-counter').textContent = showNav ? ((lbIdx + 1) + '/' + lbImages.length) : '';
                 lightbox.style.display = 'flex';
             }
 
@@ -1115,8 +1144,18 @@
             document.getElementById('porto-modal-slides').addEventListener('click', function (e) {
                 var target = e.target;
                 if (target.classList.contains('porto-slide-image')) {
-                    openLightbox(target.getAttribute('src'), target.getAttribute('alt'));
+                    openLightbox(target.getAttribute('src'));
                 }
+            });
+
+            document.getElementById('porto-lb-prev').addEventListener('click', function (e) {
+                e.stopPropagation();
+                goToLbSlide(lbIdx - 1);
+            });
+
+            document.getElementById('porto-lb-next').addEventListener('click', function (e) {
+                e.stopPropagation();
+                goToLbSlide(lbIdx + 1);
             });
 
             document.getElementById('porto-image-lightbox-close').addEventListener('click', function (e) {
@@ -1149,12 +1188,13 @@
             });
 
             document.addEventListener('keydown', function (e) {
-                if (e.key !== 'Escape') return;
                 if (lightbox.style.display === 'flex') {
-                    closeLightbox();
+                    if (e.key === 'Escape') { closeLightbox(); return; }
+                    if (e.key === 'ArrowLeft') { goToLbSlide(lbIdx - 1); return; }
+                    if (e.key === 'ArrowRight') { goToLbSlide(lbIdx + 1); return; }
                     return;
                 }
-                closeModal();
+                if (e.key === 'Escape') closeModal();
             });
         })();
     </script>
