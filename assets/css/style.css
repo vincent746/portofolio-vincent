@@ -787,9 +787,9 @@ footer .sosmed .btn-square {
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-    background: rgba(255,255,255,0.12);
+    background: rgba(30, 30, 40, 0.72);
     border: none;
-    color: #fff;
+    color: #f0f0f0;
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -804,7 +804,7 @@ footer .sosmed .btn-square {
 }
 
 .porto-modal-nav:hover {
-    background: rgba(255,255,255,0.28);
+    background: rgba(30, 30, 40, 0.92);
 }
 
 .porto-modal-prev { left: 12px; }
@@ -818,6 +818,20 @@ footer .sosmed .btn-square {
     display: flex;
     gap: 6px;
     z-index: 10;
+}
+
+.porto-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(30, 30, 40, 0.35);
+    display: inline-block;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.porto-dot.active {
+    background: rgba(30, 30, 40, 0.85);
+    transform: scale(1.25);
 }
 
 .porto-modal-body {
@@ -924,6 +938,51 @@ footer .sosmed .btn-square {
 
 .porto-image-lightbox-close:hover {
     background: rgba(255,255,255,0.3);
+}
+
+.porto-lb-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10052;
+    background: rgba(30, 30, 40, 0.72);
+    border: none;
+    color: #f0f0f0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    transition: background 0.2s;
+    line-height: 1;
+    user-select: none;
+}
+
+.porto-lb-nav:hover {
+    background: rgba(30, 30, 40, 0.92);
+}
+
+.porto-lb-prev { left: 20px; }
+.porto-lb-next { right: 20px; }
+
+.porto-lb-counter {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10052;
+    background: rgba(30, 30, 40, 0.72);
+    color: #f0f0f0;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    letter-spacing: 0.5px;
 }
 
 @media (max-width: 575.98px) {
